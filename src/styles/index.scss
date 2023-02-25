@@ -20,17 +20,26 @@ body {
 button {
   font-family: "Ubuntu", sans-serif;
   cursor: pointer;
+  font-size: $font-size;
+  transition: 0.3s;
 
   &.primary {
     border: solid 2px $purple-3;
     background-color: $purple-2;
     padding: 5px 10px;
     border-radius: 5px;
-    transition: 0.3s;
 
     &:hover {
       transform: translateY(3px);
     }
+  }
+
+  &.mini {
+    border: solid 2px $purple-3;
+    background-color: $purple-2;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: calc(#{$font-size} * 0.6);
   }
 }
 
